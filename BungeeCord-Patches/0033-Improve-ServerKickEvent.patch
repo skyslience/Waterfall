@@ -1,4 +1,4 @@
-From 10c501498457416b64ead41ca3aed3a22cbc6675 Mon Sep 17 00:00:00 2001
+From 432fbae2c8ed52b4a1e7bf258bd50619ab976ffc Mon Sep 17 00:00:00 2001
 From: Nathan Poirier <nathan@poirier.io>
 Date: Tue, 28 Jun 2016 23:00:49 -0500
 Subject: [PATCH] Improve ServerKickEvent
@@ -44,12 +44,12 @@ index 0e1ef5c4..ee63732d 100644
 +    // Waterfall start
 +    @Deprecated
      public ServerKickEvent(ProxiedPlayer player, ServerInfo kickedFrom, BaseComponent[] kickReasonComponent, ServerInfo cancelServer, State state)
-+    {
+     {
 +        this( player, kickedFrom, kickReasonComponent, cancelServer, state, Cause.UNKNOWN );
 +    }
 +
 +    public ServerKickEvent(ProxiedPlayer player, ServerInfo kickedFrom, BaseComponent[] kickReasonComponent, ServerInfo cancelServer, State state, Cause cause)
-     {
++    {
          this.player = player;
          this.kickedFrom = kickedFrom;
          this.kickReasonComponent = kickReasonComponent;
@@ -146,5 +146,5 @@ index dcd6924d..de905b83 100644
          {
              con.connectNow( event.getCancelServer() );
 -- 
-2.14.1
+2.13.0.windows.1
 
