@@ -22,6 +22,5 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <describe>16</describe>
     </properties>
 </project>
